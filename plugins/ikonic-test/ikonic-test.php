@@ -10,7 +10,7 @@ Author URI: https://www.linkedin.com/in/muhammad-zubair01/
 defined('ABSPATH') || exit;
 
 
-//******************* Redirecting users having IPs with 77.29 //*******************
+//******************* Redirecting users away having IPs with 77.29 //*******************
 add_action('template_redirect', 'hs_block_ip_prefix');
 function hs_block_ip_prefix() {
     $user_ip = $_SERVER['REMOTE_ADDR'];
